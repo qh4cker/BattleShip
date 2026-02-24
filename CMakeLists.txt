@@ -3,4 +3,11 @@ project(BattleShip)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(BattleShip main.cpp)
+add_executable(BattleShip main.cpp
+        ship.cpp
+        rect.cpp
+        point.cpp
+        mesFonctions.cpp
+        grid.cpp
+        game.cpp
+)

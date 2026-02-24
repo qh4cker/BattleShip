@@ -14,7 +14,7 @@ public:
 
 	void setWidth(int width);
 	void setHeight(int height);
-	void setSize(int width, int height);
+	void setPos(int x, int y);
 	void setRectangle(Rect& rectangle);
 
 	void read(std::istream& os);

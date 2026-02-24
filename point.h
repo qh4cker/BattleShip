@@ -1,5 +1,8 @@
 #pragma once
 #include <ostream>
+#include <fstream>
+
+
 
 class Point {
 private:
@@ -35,11 +38,17 @@ public:
 
 	bool operator==(const Point& other)const;
 	bool operator!=(const Point& other)const;
-	void operator=(const Point& other);
+	Point& operator=(const Point& other);
 	Point operator+(const Point& other) const;
 	Point operator-(const Point& other) const;
-	std::ostream& operator<<(std::ostream& out);
+	std::ostream& operator<<(std::ostream& out) const;
 	std::istream& operator>>(std::istream& in);
 	//void operator<<(std::ostream& other);
 	//void operator>>(std::istream& other);
 };
+
+void setDrawColor(int color);
+void goToXY(int xpos, int ypos);
+
+void openFile(std::ifstream& file, const std::string& fileName);
+int readFile(std::ifstream& monFlux, Point points[]);

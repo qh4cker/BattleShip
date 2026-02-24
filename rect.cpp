@@ -47,13 +47,13 @@ void Rect::setHeight(int height) {
 	h = height;
 }
 
-void Rect::setSize(int width, int height) {
-	if (width < 0 || height < 0) {
+void Rect::setPos(int x, int y) {
+	if (x < 0 || y < 0) {
 		std::cout << "Valeur invalide!\n";
 		exit(1);
 	}
-	w = width;
-	h = height;
+	coord.setX(x);
+	coord.setY(y);
 }
 
 void Rect::setRectangle(Rect& rectangle) {
