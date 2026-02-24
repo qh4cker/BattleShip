@@ -47,7 +47,7 @@ void Rect::setHeight(int height) {
 	h = height;
 }
 
-void Rect::setPos(int x, int y) {
+void Rect::setPosition(int x, int y) {
 	if (x < 0 || y < 0) {
 		std::cout << "Valeur invalide!\n";
 		exit(1);
@@ -105,7 +105,7 @@ void Rect::draw(std::ostream& os) const {
 	Point temp;
 	for (int x = getPosition().getX(); x < w + getPosition().getX(); x++) {
 		for (int y = getPosition().getY(); y < h + getPosition().getY(); y++) {
-			if (x == getPosition().getX() || x == getPosition().getX() + w || y == getPosition().getY() || y == getPosition().getY() + h) {
+			if (x == getPosition().getX() || x == getPosition().getX() + w -1 || y == getPosition().getY() || y == getPosition().getY() + h -1) {
 				temp.setPoint({x, y, coord.getColor()});
 				temp.draw(os);
 			}

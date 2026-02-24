@@ -17,8 +17,8 @@ constexpr int SHIP_SUNK_COLOR = 12;
 // Constantes pour la grille de jeu (objet "Grid")
 constexpr int GRID_INNER_MIN_X = 1;
 constexpr int GRID_INNER_MIN_Y = 5;
-constexpr int GRID_INNER_MAX_X = 10;
-constexpr int GRID_INNER_MAX_Y = 14;
+constexpr int GRID_INNER_MAX_X = 15;
+constexpr int GRID_INNER_MAX_Y = 20;
 constexpr int GRID_WIDTH = (GRID_INNER_MAX_X - GRID_INNER_MIN_X + 3);
 constexpr int GRID_HEIGHT = (GRID_INNER_MAX_Y - GRID_INNER_MIN_Y + 3);
 const std::string GRID_SHIPS_FILENAME = "ships.txt";

@@ -25,6 +25,7 @@ class Grid {
 		Grid();
 		~Grid();
 		int getNbRemainingShips() const;
+
 		bool placeHit(const Point& hitPosition);
 		void printShipsStatus(std::ostream& output) const;
 		void draw(std::ostream& output) const;

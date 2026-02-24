@@ -11,7 +11,7 @@ private:
 
 public:
 
-	Point() { x = y = color = 0; }
+	Point() { x = y = color = 7; }
 	Point(int x, int y) : x(x), y(y), color(7) {}
 	Point(int x, int y, int color) : x(x), y(y), color(color) {}
 	Point(const Point &point);

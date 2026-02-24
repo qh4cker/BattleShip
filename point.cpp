@@ -144,10 +144,10 @@ void Point::setPoint(Point point) {
 }
 
 void Point::draw(std::ostream& os) const {
-	goToXY(x, y);
+	goToXY(x * 2, y);
 	setDrawColor(color);
 
-	os << "\xFE";
+	os << "\xFE" << "\xFE";
 }
 
 void Point::print(std::ostream& os) const {

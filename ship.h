@@ -47,7 +47,7 @@ class Ship {
 
 		void print(std::ostream& output) const;
 		void draw(std::ostream& output) const;
-		void read(std::istream& input);
+		bool read(std::istream& input);
 };
 
 std::ostream& operator<<(std::ostream& output, const Ship& ship);

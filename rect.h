@@ -1,3 +1,4 @@
+#pragma once
 #include "point.h"
 
 
@@ -14,7 +15,7 @@ public:
 
 	void setWidth(int width);
 	void setHeight(int height);
-	void setPos(int x, int y);
+	void setPosition(int x, int y);
 	void setRectangle(Rect& rectangle);
 
 	void read(std::istream& os);

@@ -139,9 +139,11 @@ void Ship::draw(std::ostream &output) const {
 		_points[i].draw(output);
 }
 
-void Ship::read(std::istream &input) {
+bool Ship::read(std::istream &input) {
 	std::string temp, tempLength;
 	input >> _name >> temp;
+	if (_name.empty() || temp.empty())
+		return false;
 
 	for (int i = 1; i < temp.size() -1; i++) {
 		if (temp.at(i) == ')')
@@ -150,6 +152,7 @@ void Ship::read(std::istream &input) {
 	}
 
 	_length = stoi(tempLength);
+	return true;
 }
 
 std::ostream& operator<<(std::ostream &output, const Ship &ship) {
